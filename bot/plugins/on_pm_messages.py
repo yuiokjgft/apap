@@ -53,9 +53,8 @@ async def on_pm_s(_, message: Message):
         return
 
     fwded_mesg = await message.forward(
-        AUTH_CHANNEL
-f"From user_id: <code>{message.from_user.id}</code>"
-    )
+        AUTH_CHANNEL,
+        f"From user_id: <code>{message.from_user.id}</code>"
     )
     # just store, we don't need to SPAM users
     # mimick LiveGramBot, not @LimitatiBot ..!
