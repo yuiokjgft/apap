@@ -27,7 +27,7 @@ from bot import (
     COMMM_AND_PRE_FIX,
     IS_BLACK_LIST_ED_MESSAGE_TEXT,
     START_COMMAND
-    IS_BLACK_LIST_ED_MESSAGE.MEDIA
+    IS_BLACK_LIST_ED_MESSAGE_MEDIA
 )
 from bot.hf.flifi import uszkhvis_chats_ahndler
 from bot.sql.users_sql import (
