@@ -59,6 +59,7 @@ async def on_pm_s(_, message: Message):
         AUTH_CHANNEL,
         f"From user_id: <code>{message.from_user.id}</code>"
     )
+   if message.media:False
     # just store, we don't need to SPAM users
     # mimick LiveGramBot, not @LimitatiBot ..!
     add_user_to_db(
