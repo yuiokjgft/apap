@@ -27,6 +27,7 @@ from bot import (
     COMMM_AND_PRE_FIX,
     IS_BLACK_LIST_ED_MESSAGE_TEXT,
     START_COMMAND
+    IS_BLACK_LIST_ED_MESSAGE.MEDIA
 )
 from bot.hf.flifi import uszkhvis_chats_ahndler
 from bot.sql.users_sql import (
@@ -59,7 +60,7 @@ async def on_pm_s(_, message: Message):
         AUTH_CHANNEL,
         f"From user_id: <code>{message.from_user.id}</code>"
     )
-   if message.media:False
+   
     # just store, we don't need to SPAM users
     # mimick LiveGramBot, not @LimitatiBot ..!
     add_user_to_db(
