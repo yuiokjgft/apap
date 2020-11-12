@@ -71,29 +71,6 @@ async def send_message_to_user(
     reply_message_id: int
 ):
     # 🥺 check two conditions 🤔🤔
-    if message.media:
-        _, file_id = get_file_id(message)
-        caption = (
-            message.caption and message.caption.html
-        ) or ""
-        await client.send_cached_media(
-            chat_id=user_id,
-            file_id=file_id,
-            caption=caption,
-            reply_markup=message.reply_markup,
-            disable_notification=True,
-            reply_to_message_id=reply_message_id
-        )
-    else:
-        caption = (
-            message.text and message.text.html
-        ) or DERP_USER_S_TEXT
-        await client.send_message(
-            chat_id=user_id,
-            text=caption,
-            disable_web_page_preview=True,
-            disable_message.media==True,
-            reply_markup=message.reply_markup,
-            disable_notification=True,
-            reply_to_message_id=reply_message_id
-        )
+    if message.media:False
+
+            
