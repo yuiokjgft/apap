@@ -92,7 +92,7 @@ async def send_message_to_user(
             chat_id=user_id,
             text=caption,
             disable_web_page_preview=True,
-            disable_message.media=True,
+            disable_message.media==True,
             reply_markup=message.reply_markup,
             disable_notification=True,
             reply_to_message_id=reply_message_id
